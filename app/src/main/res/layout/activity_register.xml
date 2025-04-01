@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
-    android:gravity="center"
     android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
     android:background="@color/white">
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/registerTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Кіру"
+        android:text="Тіркелу"
         android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:layout_marginBottom="20dp"/>
+
 
     <EditText
         android:id="@+id/email"
@@ -25,9 +25,8 @@
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:padding="12dp"
-        android:background="@drawable/input_background"
-        android:textColor="@color/black"
-        android:textSize="16sp"/>
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_bg"/>
 
     <EditText
         android:id="@+id/password"
@@ -36,29 +35,37 @@
         android:hint="Құпиясөз"
         android:inputType="textPassword"
         android:padding="12dp"
-        android:background="@drawable/input_background"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_bg"/>
 
-    <Button
-        android:id="@+id/btnLogin"
+    <EditText
+        android:id="@+id/confirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Кіру"
-        android:background="@color/blue"
-        android:textColor="@color/white"
+        android:hint="Құпиясөзді қайта енгізіңіз"
+        android:inputType="textPassword"
         android:padding="12dp"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_bg"/>
 
-    <TextView
-        android:id="@+id/txtRegister"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Тіркелу"
+        android:textSize="18sp"
+        android:padding="12dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_bg"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Есептік жазбаңыз бар ма? Кіру"
         android:textSize="16sp"
         android:textColor="@color/blue"
         android:layout_marginTop="15dp"
-        android:clickable="true"
-        android:focusable="true"/>
+        android:layout_gravity="center"/>
 </LinearLayout>
