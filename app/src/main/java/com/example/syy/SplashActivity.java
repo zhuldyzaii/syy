@@ -23,7 +23,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void onCompletion(MediaPlayer mp) {
                 startActivity(new Intent(SplashActivity.this, LoginActivity.class));
-                finish(); // SplashActivity-ді жабыу
+                finish();
             }
         });
 
