@@ -11,7 +11,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "Database.db";
     private static final int DATABASE_VERSION = 1;
     private static final String TABLE_USERS = "users";
-
     private static final String COLUMN_ID = "id";
     private static final String COLUMN_EMAIL = "email";
     private static final String COLUMN_PASSWORD = "password";
