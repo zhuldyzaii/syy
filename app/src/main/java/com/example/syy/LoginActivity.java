@@ -44,11 +44,16 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Барлық өрісті толтырыңыз!", Toast.LENGTH_SHORT).show();
                 }
                 // Email форматының дұрыстығын тексеру
+<<<<<<< HEAD
                 else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(userEmail).matches() && !userEmail.equals("admin")) {
+=======
+                else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(userEmail).matches()) {
+>>>>>>> 9cfafc1b908f7227dc88714ff8b51ad2896002a1
                     Toast.makeText(LoginActivity.this, "Қате email форматы!", Toast.LENGTH_SHORT).show();
                 }
                 // Егер бәрі дұрыс болса, қолданушыны тексеру
                 else {
+<<<<<<< HEAD
                     if (userEmail.equals("admin") && userPassword.equals("123456")) {
                         // Егер админ болса
                         sessionManager.setLogin(true, "admin");
@@ -68,6 +73,18 @@ public class LoginActivity extends AppCompatActivity {
                             // Қате болса
                             Toast.makeText(LoginActivity.this, "Қате! Email немесе құпиясөз дұрыс емес.", Toast.LENGTH_SHORT).show();
                         }
+=======
+                    boolean isValid = databaseHelper.checkUser(userEmail, userPassword);
+                    if (isValid) {
+                        // Сессияны бастау
+                        sessionManager.setLogin(true, "user");
+                        Toast.makeText(LoginActivity.this, "Кіру сәтті!", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                        finish();
+                    } else {
+                        // Қате болса
+                        Toast.makeText(LoginActivity.this, "Қате! Email немесе құпиясөз дұрыс емес.", Toast.LENGTH_SHORT).show();
+>>>>>>> 9cfafc1b908f7227dc88714ff8b51ad2896002a1
                     }
                 }
             }
