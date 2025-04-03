@@ -12,33 +12,41 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Syy"
         tools:targetApi="31">
-        <activity
-            android:name=".RegisterActivity"
-            android:exported="false"
-            android:label="@string/title_activity_register"
-            android:theme="@style/Theme.Syy.NoActionBar" />
-        <activity
-<<<<<<< HEAD
-            android:name=".AdminActivity"
-=======
-            android:name=".Admin"
->>>>>>> 9cfafc1b908f7227dc88714ff8b51ad2896002a1
-            android:exported="false"
-            android:label="@string/title_activity_admin"
-            android:theme="@style/Theme.Syy.NoActionBar" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
+
+        <!-- Экран загрузки -->
         <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+
+        <!-- Экран входа -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <!-- Экран регистрации -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:label="@string/title_activity_register"
+            android:theme="@style/Theme.Syy.NoActionBar" />
+
+        <!-- Экран администратора -->
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false"
+            android:label="@string/title_activity_admin"
+            android:theme="@style/Theme.Syy.NoActionBar" />
+
+        <!-- Главный экран после входа -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
