@@ -4,68 +4,26 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="24dp"
-    android:background="@color/white">
+    android:padding="24dp">
 
     <TextView
-        android:id="@+id/registerTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Тіркелу"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginBottom="20dp"/>
-
-
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:padding="12dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edit_text_bg"/>
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Құпиясөз"
-        android:inputType="textPassword"
-        android:padding="12dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edit_text_bg"/>
-
-    <EditText
-        android:id="@+id/confirmPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Құпиясөзді қайта енгізіңіз"
-        android:inputType="textPassword"
-        android:padding="12dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edit_text_bg"/>
+        android:text="Кім ретінде тіркелесіз?"
+        android:textSize="20sp"
+        android:layout_marginBottom="32dp" />
 
     <Button
-        android:id="@+id/btnRegister"
+        android:id="@+id/btn_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Тіркелу"
-        android:textSize="18sp"
-        android:padding="12dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/button_bg"
-        android:textColor="@color/white"/>
+        android:text="Қолданушы ретінде"
+        android:layout_marginBottom="16dp" />
 
-    <TextView
-        android:id="@+id/txtLogin"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_brand"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Есептік жазбаңыз бар ма? Кіру"
-        android:textSize="16sp"
-        android:textColor="@color/blue"
-        android:layout_marginTop="15dp"
-        android:layout_gravity="center"/>
+        android:text="Бренд ретінде" />
+
 </LinearLayout>

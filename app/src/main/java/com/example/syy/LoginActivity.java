@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                         finish();
                     } else {
                         // Қарапайым қолданушыны тексеру
-                        boolean isValid = databaseHelper.checkUser(userEmail, userPassword);
+                        boolean isValid = databaseHelper.checkUser(userEmail, userPassword); // ✅ Енді дұрыс
                         if (isValid) {
                             // Сессияны бастау
                             sessionManager.setLogin(true, "user");

@@ -12,4 +12,14 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_activity_register">RegisterActivity</string>
+
+    <string-array name="water_types">
+
+        <item>Минеральная</item>
+        <item>Талое</item>
+        <item>Горное</item>
+        <item>Артезианское</item>
+        <item>Обычная</item>
+    </string-array>
+
 </resources>

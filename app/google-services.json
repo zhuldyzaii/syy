@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1069089176777",
+    "project_id": "tazasuapp",
+    "storage_bucket": "tazasuapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069089176777:android:421980d95d67831166e118",
+        "android_client_info": {
+          "package_name": "com.example.syy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq5fvoTqVnwlYip5vO3dASDEp0wAyB41o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
