@@ -5,10 +5,11 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <Button
-        android:id="@+id/confirmButton"
+    <EditText
+        android:id="@+id/phoneEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Брендті растау" />
+        android:hint="Телефон нөмірі"
+        android:inputType="phone" />
 
 </LinearLayout>

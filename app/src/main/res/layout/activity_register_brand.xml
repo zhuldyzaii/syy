@@ -1,102 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/brandRegisterLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="24dp"
+    android:gravity="center"
     android:background="#FAFAFA">
 
-    <LinearLayout
+    <EditText
+        android:id="@+id/brandNameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal">
+        android:hint="Су атауы"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_bg"
+        android:layout_marginBottom="16dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Бренд ретінде тіркелу"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="24dp"/>
+    <Button
+        android:id="@+id/uploadCertificateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сертификатты таңдау"
+        android:layout_marginBottom="16dp"/>
 
-        <!-- Email -->
-        <EditText
-            android:id="@+id/editTextEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="textEmailAddress"
-            android:layout_marginBottom="16dp"/>
-
-        <!-- Құпия сөз -->
-        <EditText
-            android:id="@+id/editTextPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Құпия сөз"
-            android:inputType="textPassword"
-            android:layout_marginBottom="16dp"/>
-
-        <!-- Су атауы -->
-        <EditText
-            android:id="@+id/editTextWaterName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Су атауы"
-            android:layout_marginBottom="16dp"/>
-
-        <!-- Құрамы -->
-        <EditText
-            android:id="@+id/editTextComposition"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Құрамы"
-            android:layout_marginBottom="16dp"/>
-
-        <!-- Су көзі -->
-        <EditText
-            android:id="@+id/editTextSource"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Су көзі (мыс: артезиан)"
-            android:layout_marginBottom="16dp"/>
-
-        <!-- Су түрі -->
-        <Spinner
-            android:id="@+id/spinnerWaterType"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"/>
-
-        <!-- Фото таңдау -->
-        <Button
-            android:id="@+id/buttonChoosePhoto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Бөтелке суретін таңдау"
-            android:layout_marginBottom="8dp"/>
-
-        <!-- Сертификат жүктеу -->
-        <Button
-            android:id="@+id/buttonUploadCertificate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Сертификат жүктеу (PDF немесе сурет)"
-            android:layout_marginBottom="24dp"/>
-
-        <!-- Тіркелу батырмасы -->
-        <Button
-            android:id="@+id/buttonRegisterBrand"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Тіркелу"/>
-
-        <TextView
-            android:id="@+id/textViewLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Аккаунтыңыз бар ма? Кіру"
-            android:textColor="#2196F3"
-            android:layout_marginTop="16dp"/>
-    </LinearLayout>
-</ScrollView>
+    <Button
+        android:id="@+id/registerBrandButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Брендті тіркеу"/>
+</LinearLayout>

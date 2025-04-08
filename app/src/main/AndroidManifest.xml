@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Syy"
         tools:targetApi="31">
         <activity
+            android:name=".PhoneAuthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BrandPanelActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterBrandActivity"
             android:exported="false" />
         <activity
@@ -30,8 +36,7 @@
         <activity
             android:name=".LoginActivity"
             android:exported="false" /> <!-- Экран регистрации -->
-        <activity android:name=".RegisterActivity" />
- <!-- Экран администратора -->
+        <activity android:name=".RegisterActivity" /> <!-- Экран администратора -->
         <activity
             android:name=".AdminActivity"
             android:exported="false"
